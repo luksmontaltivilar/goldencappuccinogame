@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <title>Golden Cappuccino Run</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo--1">
+            <img id="logotipo_inicial" src="img/Golden Cappuccino Logo Game.png" alt="Logotipo Jogo Golden Cappuccino">
+            <br>
+            <button class="btn-proximo blink" data-proximo="0" id="botao_inicial">Iniciar o Jogo</button>
+            <br>
+            <button class="btn-proximo" data-proximo="-3" id="botao_inicial">Créditos</button>
+            <button class="btn-proximo" data-proximo="-2" id="game_over_button">GAME OVER!</button>
+        </div>
+
+
+        <div class="passo" id="passo--2">
+            <p class="blink" id="game_over">GAME OVER</p>
+            <button class="btn-proximo" data-proximo="-1">Menu</button>
+        </div>
+
+
+        <div class="passo" id="passo--3">
+            <p>História e Programação: 
+                <br> Luks Montalti <br>
+                <br> Imagens: 
+                <br> Adobe Firefly <br>
+                <br> Qualquer semelhança serão meras coincidências 
+                <br> © Direitos reservados a seus criadores <br>
+                <br> ATENÇÃO!: História fictícia e meio maluquinha! <br>
+            </p>
+            <br>
+            <button class="btn-proximo" data-proximo="-1">Menu</button>
+        </div>
+
+
+        <div class="passo" id="passo-0">
+            <p>
+                Esses dias, fiquei sabendo de um caminho secreto para encontrar o café secreto, o “Golden Cappuccino”.
+                <br> Claro que fiquei tentado para encontrar essa iguaria que vale mais do que dinheiro. 
+                <br> Vamos ver se chegamos lá?
+            </p>
+            <button class="btn-proximo" data-proximo="1">Ir para Sorocaba</button>
+            <button class="btn-proximo" data-proximo="2">Ir para Nova Iorque</button>
+        </div>
+
+
+        <div class="passo" id="passo-1">
+            <p>
+                Acho que você pensa pouco de mim, hein? Mas, de qualquer forma, lá vou eu.
+                <br> Pego meu carro e sigo na rodovia, chegando lá vejo duas placas, qual seguir?
+            </p>
+            <button class="btn-proximo" data-proximo="3">A que diz “Retorno B612”</button>
+            <button class="btn-proximo" data-proximo="4">A que diz “Golden Cappuccino por aqui!!!”</button>
+        </div>
+
+
+        <div class="passo" id="passo-2">
+            <br>
+            <img src="img/aeroporto-taxi-frente.jpg" alt="">
+            <p>
+                Chego até lá, não sei porquê, ao sair do aeroporto vem um taxista em minha direção, usando termos desconhecidos, como “Gud Morningue”, “Evenim” e “Uere are iu from?”, não entendo inglês, mas para me defender, mando um “Ah, vai se...”, espera, onde quero chegar com isso?
+            </p>
+            <button class="btn-proximo" data-proximo="5">Entrar no Taxi</button>
+            <button class="btn-proximo" data-proximo="6">Voltar para o aeroporto</button>
+        </div>
+
+
+        <div class="passo" id="passo-3">
+            <p>
+                Continuo a direita, viro no retorno mencionado antes. 
+                <br> Só há um caminho, através de uma estrada de Terra no meio do mato, entro. <br> Começo a sentir o cheiro do orvalho e da grama, e sem mais nem menos, o carro morre sem explicações, e agora?
+            </p>
+            <button class="btn-proximo" data-proximo="7">Dar partida e zarpar</button>
+        </div>
+
+
+        <div class="passo" id="passo-4">
+            <p>
+                É claro que esse era o caminho! 
+                <br> Viro para a esquerda na direção da placa. Dirijo por 45 minutos em uma estrada de terra e chego a lugar nenhum. 
+                <br> Parabéns, não acredito que você caiu nessa!
+            </p>
+            <button class="btn-proximo" data-proximo="-2" id="game_over_button">GAME OVER!</button>
+        </div>
+
+
+        <div class="passo" id="passo-5">
+            <p>
+                Entro no Taxi, novamente o motorista conversa comigo através de palavras desconhecidas, ele dá uma pausa, olha para mim, e sei que está esperando pelo meu destino, reproduzo ruídos sem sentido para mim, ele responde “Okay!” e começa a dirigir. 
+                <br> Não faço ideia para onde estamos indo.
+            </p>
+            <button class="btn-proximo" data-proximo="7">Esperar a vida me levar!</button>
+        </div>
+
+
+        <div class="passo" id="passo-6">
+            <p>
+                Corro de volta para o aeroporto, me escondo no banheiro, todos falam essa língua alienígena
+            </p>
+            <button class="btn-proximo" data-proximo="15">Sair e jogar uma água no rosto</button>
+            <button class="btn-proximo" data-proximo="16">Sair correndo o mais rápido possível</button>
+        </div>
+
+
+        <div class="passo" id="passo-8">
+            <p>
+                De volta às igrejas, você finalmente encontra o mapa antigo. Agora, para o Amazonas!
+            </p>
+            <button class="btn-proximo" data-proximo="7">Seguir em frente!</button>
+        </div>
+
+
+        <div class="passo" id="passo-7">
+            <br>
+            <img src="img/carro-meio-floresta-pensativo.jpg" alt="">
+            <p>
+                Agora me dou conta, sou apenas um idiota, envolto de pensamentos inexistentes, em um carro no meio de uma estrada de Terra, ido sabe se lá para onde, será que valerá a pena? 
+                <br> Derrepente o carro para e há frente existem duas trilhas, sinto o cheiro de café no ar, é por aqui!
+            </p>
+            <button class="btn-proximo" data-proximo="9">Sair e seguir pela esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Sair e seguir pela direita</button>
+        </div>
+
+
+        <div class="passo" id="passo-10">
+            <p>
+                A trilha à direita termina em riacho e uma área pantanosa. 
+                <br> Apesar da bela vista, não há sinais de nada aqui.
+            </p>
+            <button class="btn-proximo" data-proximo="9">Retornar e tentar o outro caminho</button>
+        </div>
+
+
+        <div class="passo" id="passo-9">
+            <br>
+            <img src="img/cafeteria-rosa-branca-floresta.jpg" alt="">
+            <p>
+                A trilha à esquerda me leva a uma cafeteria escondida, com as paredes externas nas cores branco e rosa, obviamente já pretejados pelo tempo e pela umidade, um calafrio percorre minha coluna, segundo ápos segundo, vertebra por vertebra. 
+                <br> Há duas portas bem diferentes. 
+                <br> Por qual eu deveria entrar?
+            </p>
+            <button class="btn-proximo" data-proximo="11">Pela porta escrita “Entrada”</button>
+            <button class="btn-proximo" data-proximo="12">Pela porta escrita “Saída”</button>
+        </div>
+
+
+        <div class="passo" id="passo-11">
+            <p>
+                Lá fui eu. 
+                <br> Ao entrar ambas as portas davam ao mesmo lugar, um saguão bem menor do que imaginava, com detalhes principalmente em madeira escura e alguns tons de roxo e rosa. 
+                <br> Avistei o balcão, há um garçonete logo atrás me observando de canto de olho.
+            </p>
+            <button class="btn-proximo" data-proximo="13">Se aproximar e fazer um pedido</button>
+        </div>
+
+
+        <div class="passo" id="passo-12">
+            <br>
+            <img src="img/interior-cafeteria-antiga-balcao.jpg" alt="">
+            <p>
+                Uma escolha um tanto quanto ousada. 
+                <br> Mesmo assim, ao entrar ambas as portas davam ao mesmo lugar, um saguão bem menor do que imaginava, com detalhes principalmente em madeira escura e alguns tons de roxo e rosa. 
+                <br> Avistei o balcão, há um garçonete logo atrás me observando de canto de olho.
+            </p>
+            <button class="btn-proximo" data-proximo="13">Se aproximar e fazer um pedido</button>
+        </div>
+
+
+        <div class="passo" id="passo-13">
+            <br>
+            <img src="img/interior-cafeteria-antiga-balcao.jpg" alt="">
+            <p>
+                Me aproximo com passos calmos, a moça parece estar enojada com minha presença, mas não me importo. 
+                <br> Finjo ler o cardápio por alguns segundo (não vejo o Golden Cappuccino ali). 
+                <br>  Tomo coragem e peço: “Moça, me vê... um Golden Cappuccino?” 
+                <br> Ela dá um sorrisinho
+            </p>
+            <button class="btn-proximo" data-proximo="14">E?</button>
+        </div>
+
+
+        <div class="passo" id="passo-14">
+            <br>
+            <img src="img/interior-cafeteria-antiga-balcao.jpg" alt="">
+            <p>
+                Ela dá uma pausa dramática, suspira calmamente e me responde:
+                “Está fora do cardápio desde ontem!” 
+                <br> ...  ...  ...
+            </p>
+            <button class="btn-proximo" data-proximo="-1">... ...</button>
+        </div>
+
+
+        <div class="passo" id="passo-15">
+            <p>
+                Saiu de forma sutil, como se nada tivesse acontecendo, me abaixo na pia, a água está gelada, percebo que nada muda, não consigo me acalmar, derrepente alguém toda minhas costas, apenas sinto uma mão pesada e quente sobre a parte de trás de minha camiseta
+            </p>
+            <button class="btn-proximo" data-proximo="16">CORRE!</button>
+        </div>
+
+
+        <div class="passo" id="passo-16">
+            <p>
+                Saio correndo, não percebo que o chão estava molhado, escorrego algumas vezes, consigo deixar aquele lugar, fico curioso para saber quem era, mas nunca teria coragem de me virar
+            </p>
+            <button class="btn-proximo" data-proximo="17">Ir para o saguão principal</button>
+            <button class="btn-proximo" data-proximo="18">Voltar para o Brasil</button>
+        </div>
+
+
+        <div class="passo" id="passo-17">
+            <p>
+                Vou para o saguão principal, estou cansado, acho que essa correria não me fez tão bem.
+            </p>
+            <button class="btn-proximo" data-proximo="20">Procurar uma cafeteria</button>
+        </div>
+
+
+        <div class="passo" id="passo-18">
+            <p>
+                Me dirijo para o salão principal, olha para os voos no telão, não faço ideia de qual pegar, apenas vejo um com a bandeira do Brasil, compro passagens, vou para o avião e desembarco em Viracopos
+            </p>
+            <button class="btn-proximo" data-proximo="19">Desistir e voltar para casa</button>
+            <button class="btn-proximo" data-proximo="1">Ir para Sorocaba</button>
+        </div>
+
+
+        <div class="passo" id="passo-19">
+            <p>
+                Realmente, talvez tenha sido uma péssima idéia sair de casa só para isso, desculpe por fazer você perder seu tempo para me ajudar.
+                <br> Volto para casa, deito na cama e fico pensando o que poderia ter sido se tivesse pego o caminho certo.
+            </p>
+            <button class="btn-proximo" data-proximo="-2" id="game_over_button">GAME OVER!</button>
+        </div>
+
+
+        <div class="passo" id="passo-20">
+            <p>
+                Quem precisa do Golden Cappuccino não é mesmo?
+                <br> Olho ao redor, encontro uma cafeteria pequena, mas chique, quase escondida na multidão, ando até lá, me sento no balcão e olho o cardápio.
+            </p>
+            <button class="btn-proximo" data-proximo="21">Pedir um Cappuccino</button>
+            <button class="btn-proximo" data-proximo="22">Pedir um Macchiato</button>
+        </div>
+
+        <div class="passo" id="passo-21">
+            <p>
+                Faço meu pedido apontando para o Cappuccino no cardápio. Ela responde: “Seven dollars!”. 
+                <br> Por incrível que pareça, entendo o preço: $7 ou R$500.000 (aproximadamente). 
+                <br> Absorvo isso como um murro forte em minha face.
+            </p>
+            <button class="btn-proximo" data-proximo="23">Pagar</button>
+        </div>
+
+
+        <div class="passo" id="passo-22">
+            <p>
+                Faço meu pedido apontando para o Macchiato no cardápio. Ela responde: “Six dollars!”. 
+                <br> Por incrível que pareça, entendo o preço: $6 ou R$420.000 (aproximadamente). 
+                <br> Absorvo isso como um murro forte em minha face.
+            </p>
+            <button class="btn-proximo" data-proximo="23">Pagar</button>
+        </div>
+
+
+        <div class="passo" id="passo-23">
+            <p>
+                Coloco a mão sobre meu bolso esquerdo, não sinto minha carteira, coloco-a sobre o bolso direito e também não sinto nada. Um calafrio percorre minha coluna, segundo ápos segundo, vertebra por vertebra.
+            </p>
+            <button class="btn-proximo" data-proximo="24">Ah não...</button>
+        </div>
+
+
+        <div class="passo" id="passo-24">
+            <p>
+                Esqueci minha carteira em casa. Agora sou só uma pessoa desconhecida, perdida em um país diferente, na qual não entendo nada.
+                <br> Acho que estou preso aqui, para sempre...
+            </p>
+            <button class="btn-proximo" data-proximo="-2" id="game_over_button">GAME OVER!</button>
+        </div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+body {
+    background-color:#a2691e;
+    color: white;
+    font-family: "SUSE", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+
+button {
+    background-color: burlywood;
+    color: black;
+    font-family: "SUSE", sans-serif;
+    font-weight: 800;
+}
+
+main {
+    max-width: 90%;
+    text-align: center;
+}
+
+img {
+    max-width: 65%;
+}
+
+
+
+
+.passo {
+  display: none;
+}
+
+.passo.ativo {
+  display:block;
+}
+
+
+
+
+#logotipo_inicial {
+  max-width: 75%;
+}
+
+
+
+#game_over {
+    font-size: 150px;
+    color: rgb(255, 0, 51);
+    font-weight: bold;
+    background-color: black;
+    padding: 20px;
+}
+
+
+
+#game_over_button {
+  background-color: rgb(174, 46, 0);
+  color: azure;
+  font-size: 17px;
+}
+
+
+
+.blink {
+    animation: blink 1.5s steps(1, end) infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
